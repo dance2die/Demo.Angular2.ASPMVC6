@@ -1,9 +1,15 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+	ViewData["Title"] = "Home Page";
 }
+<core-app>
+	<div>
+		<p>Please wait ...</p>
+	</div>
+</core-app>
 
-<h1>Hello .Net Core 1.0 + MVC6</h1>
-
-
+@section Scripts {
+	<script>
+        System.config({ packages: { 'app': { defaultExtension: 'js' } }, });
+        System.import('app/main').then(null, console.error.bind(console));
+	</script>
+}
