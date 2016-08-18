@@ -25,7 +25,7 @@ namespace CoreMVCAngular
 				app.UseDeveloperExceptionPage();
 			}
 
-			//app.UseStaticFiles();
+			app.UseStaticFiles();
 
 			app.UseMvc(routes =>
 			{
